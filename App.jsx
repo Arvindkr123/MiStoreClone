@@ -3,13 +3,18 @@ import "./App.css";
 import PreNavbar from "./components/PreNavbar";
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
-// import './Style/Navbar.css'
+import data from './data/data.json'
+import Slider from "./components/Slider";
+import Offers from "./components/Offers.jsx";
+// import './Style/Navb.jsxar.css'
 
 const App = () => {
   return (
     <BrowserRouter>
           <PreNavbar />
-          <Navbar/>
+          <Navbar />
+          <Slider start={data.banner.start} />
+          <Offers offer={data.offer} />
     </BrowserRouter>
   );
 };
