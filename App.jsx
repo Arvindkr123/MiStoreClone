@@ -8,6 +8,7 @@ import Slider from "./components/Slider";
 import Offers from "./components/Offers.jsx";
 import Heading from "./components/Heading.jsx";
 import StarProducts from "./components/StarProducts.jsx";
+import HotAccessoriesMenu from "./components/HotAccessoriesMenu.jsx";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
       <Offers offer={data.offer} />
       <Heading text={"STAR PRODUCTS"} />
       <StarProducts startProduct={data.starProduct} />
+      <Heading text={"HOT ACCESSORIES"} />
+      <HotAccessoriesMenu/>
     </BrowserRouter>
   );
 };
