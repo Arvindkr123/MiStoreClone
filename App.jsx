@@ -1,14 +1,17 @@
-import React from 'react'
-import './App.css'
-import PreNavbar from './components/PreNavbar'
-import './Style/PreNavbar.css'
+import React from "react";
+import "./App.css";
+import PreNavbar from "./components/PreNavbar";
+import Navbar from "./components/Navbar";
+import { BrowserRouter } from "react-router-dom";
+// import './Style/Navbar.css'
 
 const App = () => {
-    return (
-        <div>
-            <PreNavbar/>
-        </div>
-    )
-}
+  return (
+    <BrowserRouter>
+          <PreNavbar />
+          <Navbar/>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
