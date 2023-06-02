@@ -81,6 +81,7 @@ const App = () => {
             }
           ></Route>
         </Routes>
+        <Heading text={"PRODUCT REVIEWS"} />
       </BrowserRouter>
     </>
   );
